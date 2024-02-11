@@ -1,0 +1,12 @@
+﻿@page
+@model sneaker_store.Pages.FormModel
+@{
+}
+
+<form method="post" asp-page="Form">
+    <input type="text" asp-for="@Model.Products.Name" placeholder="enter name" />
+    <input type="text" asp-for="@Model.Products.Price" placeholder="enter price" />
+    <input type="text" asp-for="@Model.Products.Description" placeholder="enter description" />
+    <input type="text" asp-for="@Model.Products.ProductImage" placeholder="enter image" />
+    <input type="submit" value="Save" />
+</form>

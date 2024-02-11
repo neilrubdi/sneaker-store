@@ -1,0 +1,18 @@
+﻿@page
+@model sneaker_store.Pages.ProductsModel
+@{
+
+}
+
+<div class="flex-container">
+ @foreach (var product in Model.Products)
+ {
+    <div class="productInformation">
+      <h3>@product.Name</h3>
+      <img class="product-image img-fluid img-thumbnail" style="width:200px" src="~/Images/@product.ProductImage" alt="Image of @product.Name"/>
+      <h4>$@product.Price</h4>
+      <p class="description">@product.Description</p>
+    </div> 
+ }
+ </div>
+
